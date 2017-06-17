@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>书成博客</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/media.css"> -->
+    <link rel="stylesheet" href="css/jquery.fullPage.css">
+    <style>
+    .section {
+        text-align: center;
+        font-family: fantasy;
+        color: #fff;
+    }
+    </style>
+</head>
+
+<body>
+    <!-- 
+    <div class="middle">
+        <div class="panel panel-info">
+            <div class="panel-heading panel-headingHover">
+                <ul id="moban">〓 模板切换
+                    <li>
+                        <i></i>
+                        <a href="">模板1</a>
+                        <a href="">模板2</a>
+                        <a href="">模板3</a>
+                    </li>
+                </ul>
+            </div>
+            模板1
+            <div id="content" style="display: none;">
+                <div class="content_left">
+                    <div class="content_left_img">
+                        <img src="img/logo.jpg">
+                    </div>
+                    <div class="content_left_skills">
+                        <h4>HTML&nbsp;/&nbsp;CSS3&nbsp;/&nbsp;jQuery&nbsp;/&nbsp;Bootstrap</h4>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 80%;">
+                                80%
+                            </div>
+                        </div>
+                        <h4>Trident&nbsp;/&nbsp;Webkit&nbsp;/&nbsp;Gecko</h4>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
+                                70%
+                            </div>
+                        </div>
+                        <h4>PHP&nbsp;/&nbsp;Mysql&nbsp;/&nbsp;NodeJs&nbsp;/&nbsp;SEO</h4>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                                60%
+                            </div>
+                        </div>
+                        <h4>AngularJs&nbsp;/&nbsp;GitHub&nbsp;/&nbsp;Linux&nbsp;/&nbsp;Shell</h4>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 65%;">
+                                65%
+                            </div>
+                        </div>
+                        <h4>Less&nbsp;/&nbsp;Sass/&nbsp;Svn&nbsp;/</h4>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 50%;">
+                                50%
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content_right">
+                    <div style="float: right;width: 95%;">
+                        1
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">个人评价</h3>
+                            </div>
+                            <div class="panel-body">
+                                <ul>
+                                    <li>1、主攻前端、并对前端有极浓厚的兴趣和热情。</li>
+                                    <li>2、工作态度认真负责，对待Bug一律通杀。</li>
+                                    <li>3、善于总结、分析思考、思路清晰，今天的项目经验就是未来的解决方案。</li>
+                                    <li>4、多年养成的自学习惯、学习能力强、追求与时俱进、追求卓越。</li>
+                                    <li>5、阳光、广交好友、抗苦、抗压、抗寂寞、关注新技术。</li>
+                                </ul>
+                            </div>
+                        </div>
+                        2
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">求职意向</h3>
+                            </div>
+                            <div class="panel-body" id="objective">
+                                <ul>
+                                    <li>应聘职位：前端开发工程师</li>
+                                    <li>开发经验：1 年半 </li>
+                                    <li>工作地点：广州 </li>
+                                </ul>
+                                <ul>
+                                    <li>期望薪资：10k</li>
+                                    <li>目前状态：可随时入职</li>
+                                    <li>工作性质：全职</li>
+                                </ul>
+                            </div>
+                        </div>
+                        3
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">项目介绍</h3>
+                            </div>
+                            <div class="panel-body">
+                                <h4 style="line-height: 0;"><dt  style="line-height: 0;">项目1：</dt></h4>
+                                <ul>
+                                    <li>项目名称：王者荣耀代练平台</li>
+                                    <li>项目职责：独立开发</li>
+                                    <li>项目链接：<a href="http://shucy.top">点击前往</a></li>
+                                    <li>项目描述：
+                                        <dt>
+                                            ● 为王者荣耀手游玩家建立的一个代练中介平台，买家提交订单后，由卖家在后台承接订单！前端界面采用了的画布功能！
+                                        </dt>
+                                        <dt>
+                                            ● 采用了bootstrap、jQuery框架的制作！全局以自适应为基础！对整个网站进行了响应式的布局！兼容了Webkit，Gecko等主流内核，其中包含了chrome浏览器、360浏览器、QQ浏览器等各主流浏览器的兼容，因时间限制未对ie浏览器进行全局兼容！仅限ie11+的使用！pc下的后台更是添加了导航栏模式切换效果！
+                                        </dt>
+                                        <dt>
+                                            ● 全局以php为主方便插入代码使用、以ajax为底进行数据传输、以MySQL为根进行数据储存、以面向对象为包传递所有订单内容从而在后台判断内容动态添加订单！
+                                        </dt>
+                                    </li>
+                                </ul>
+                                <h4 style="text-align: center;"><a href="">查看更多</a></h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            模板2
+        </div>
+    </div>
+    </div> -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">我的web简历</a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">模板切换 <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">模板1</a></li>
+                            <li><a href="#">模板2</a></li>
+                            <li><a href="#">模板3</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--模板1-->
+    <div id="dowebok">
+        <div class="section section1">
+            <img src="img/logo.jpg">
+            <p class="hengxian"></p>
+            <h3>生活不止眼前的苟且，还有诗和远方！</h3>
+            <h4>我是王荣盛</h4>
+            <h4>一名前端研发攻城狮</h4>
+            <h4>我有故事！你有酒吗？让我们一块畅谈到天亮吧！</h4>
+            <h4></h4>
+            <h3 style="margin-top: 5%;">My Email：15917905926@163.com</h3>
+        </div>
+        <div class="section section2">
+            <h2>关于我</h2>
+            <p class="hengxian"></p>
+            <div class="Icon">
+                <ul><i class="glyphicon glyphicon-grain"></i>
+                    <li>年龄/20岁</li>
+                </ul>
+                <ul><i class="glyphicon glyphicon-record"></i>
+                    <li>坐标/广东</li>
+                </ul>
+                <ul><i class="glyphicon glyphicon-briefcase"></i>
+                    <li>状态/离职</li>
+                </ul>
+            </div>
+            <h3>3年的互联网经验及1年半的前端开发经验</h3>
+            <h3>熟悉jQuery/css3/h5界面的编写</h3>
+            <h3>长期养成的自学习惯，高效的自学能力</h3>
+            <h3>强烈的自我驱动力,代码强迫症患者</h3>
+            <h3>善于总结、分析思考、思路清晰，今天的项目经验就是未来的解决方案。</h3>
+        </div>
+        <div class="section section3">
+            <h2>技能栈</h2>
+            <p class="hengxian"></p>
+            <div class="SkillsLeft">
+                <div class="SkillsLeftCircle">
+                    <a href="">HTML</a>
+                    <a href="">CSS</a>
+                    <a href="">Hack</a>
+                    <a href="">JS/JQ</a>
+                    <a href="">Node</a>
+                </div>
+                <a href="">MySQL</a>
+                <a href="">angular</a>
+                <a href="">GitHub</a>
+                <a href="">Linux</a>
+                <a href="">Shell</a>
+                <a href="">PHP</a>
+            </div>
+            <div class="SkillsRight">
+                <h3>熟悉HTML/CSS3/JS</h3>
+                <h3>熟练常用的框架库jQuery、angular、bootstrap</h3>
+                <h3>熟练w3c标准写法</h3>
+                <h3>清楚各种主流浏览器的兼容性问题</h3>
+                <h3>良好的注释习惯，便于维护</h3>
+            </div>
+        </div>
+        <div class="section section4">
+                <h2>作品集</h2>
+                <p class="hengxian"></p>
+                <div class="section4_content">
+	                <div class="section4_content_left">
+	                	<img src="img/1.png">
+	                	<img src="img/2.png" style="margin-top: 7%;margin-left: -60%;">
+	                	<img src="img/3.png" style="margin-top: 14%;margin-left: -60%;">
+	                </div>
+					<div class="section4_content_right">
+						<h4>项目名称：<a href="http://shucy.top">王者荣耀代练平台</a></h4>
+						<h4>个人职责：独立开发</h4>
+						<h4>开发时长：17/6/1--17/6/12</h4>
+						<h4>项目描述：</h4>
+						<h4>1、该平台为某手游建立而成的一个中介代练平台！采用了bootstrap、jQuery框架的制作。</h4>
+						<h4>2、全局以自适应为基础！对整个网站进行了响应式的布局！兼容了Webkit，Gecko等主流内核，其中包含了chrome浏览器、360浏览器、QQ浏览器等各主流浏览器的兼容，因时间限制未对ie浏览器进行全局兼容！仅限ie11+的使用！pc下的后台更是添加了导航栏模式切换效果！</h4>
+						<h4>3、全局以php为主方便插入代码使用、以ajax为底进行数据传输、以MySQL为根进行数据储存、以面向对象为包传递所有订单内容从而在后台判断内容动态添加订单！</h4>
+
+					</div>
+                </div>
+            <!-- 
+            <div class="slide">
+                <h2>作品集</h2>
+                <p class="hengxian"></p>
+                <div class="section4_content">
+            	                <div class="section4_content_left">
+            	                	<img src="img/logo.jpg">
+            	                	<img src="img/logo.jpg" style="margin-top: 7%;margin-left: -60%;">
+            	                	<img src="img/logo.jpg" style="margin-top: 14%;margin-left: -60%;">
+            	                </div>
+            					<div class="section4_content_right">
+            						<h4>项目名称：mc云流控（已下线）</h4>
+            						<h4>个人职责：独立开发</h4>
+            						<h4>开发时长：16/12/12-17/1/1</h4>
+            						<h4>项目描述：</h4>
+            						<h4>1、利用openVPN服务器代理，实现免流（无限流量）上网！</h4>
+            						<h4>2、全局以自适应为基础！对整个网站进行了响应式的布局！兼容了Webkit，Gecko等主流内核，其中包含了chrome浏览器、360浏览器、QQ浏览器等各主流浏览器的兼容，因时间限制未对ie浏览器进行全局兼容！仅限ie11+的使用！pc下的后台更是添加了导航栏模式切换效果！</h4>
+            						<h4>3、全局以php为主方便插入代码使用、以ajax为底进行数据传输、以MySQL为根进行数据储存、以面向对象为包传递所有订单内容从而在后台判断内容动态添加订单！</h4>
+            
+            					</div>
+                </div>
+            </div> -->
+        </div>
+    </div>
+    </div>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
+    <script type="text/javascript" src="js/style.js"></script>
+    <script>
+    $(function() {
+	
+        $('#dowebok').fullpage({
+            sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', '#f90'],
+            'navigation': true,
+            'slidesNavigation': true,
+            'controlArrowColor': "transparent",
+            afterLoad: function(anchorLink, index) {
+                if (index == 2) {
+                    $('.section2').find('p').delay(500).animate({
+                        left: '0'
+                    }, 1500, 'easeOutExpo');
+
+                    $('.section2').find('h3').delay(500).animate({
+                        top: '0'
+                    }, 1500, 'easeOutExpo');
+                }
+                if (index == 3) {
+                    $('.section3').find('p').delay(500).animate({
+                        bottom: '0'
+                    }, 1500, 'easeOutExpo');
+                }
+                if (index == 4) {
+                    $('.section4').find('p').fadeIn(2000);
+                }
+            },
+            onLeave: function(index, direction) {
+                if (index == '2') {
+                    $('.section2').find('p').delay(500).animate({
+                        left: '-120%'
+                    }, 1500, 'easeOutExpo');
+                    $('.section2').find('h3').delay(500).animate({
+                        top: '-120%'
+                    }, 1500, 'easeOutExpo');
+                }
+                if (index == '3') {
+                    $('.section3').find('p').delay(500).animate({
+                        bottom: '-120%'
+                    }, 1500, 'easeOutExpo');
+                }
+                if (index == '4') {
+                    $('.section4').find('p').fadeOut(2000);
+                }
+            }
+        });
+    });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+
+@media screen and (max-width: 700px) {
+    #dowebok .section1 h3 {
+        margin: 0 10%;
+    }
+    #dowebok .section1 h4 {
+        margin: 2% 10%
+    }
+    body #dowebok .section2 .Icon {
+        margin: 0;
+        margin-bottom: 4rem;
+    }
+    body #dowebok .section2 .Icon ul {
+        margin: 0 1%;
+    }
+    body #dowebok .section2 h3 {
+        line-height: 30px;
+        margin: 0 10%;
+    }
+    body #dowebok .section3 .SkillsLeft {
+        width: 300px;
+        height: 300px;
+        float: left;
+        margin: 0px 10%;
+        border-radius: 50%;
+        border: 2px dashed #2196F3;
+        animation: spin 18s linear 0s infinite;
+        /*调用动画*/
+    }
+    body #dowebok .section3 .SkillsRight {
+        margin-top: 20px;
+    }
+    body #dowebok .section3 .SkillsRight h3 {
+        font-size: 16px;
+        line-height: 10px;
+    }
+}

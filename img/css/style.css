@@ -1,0 +1,269 @@
+/*全局样式*/
+
+html {
+    font-size: 62.5%;
+}
+
+ul,
+li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    display: inline-block;
+}
+
+.hengxian {
+    border: 1px solid rgba(204, 255, 245, 0.37);
+    margin: 2% 20%;
+}
+
+
+/*响应式布局*/
+
+@media screen and (max-width: 700px) {
+    /*第一屏的响应式*/
+    #dowebok .section1 h3 {
+        margin: 0 10%;
+    }
+    #dowebok .section1 h4 {
+        margin: 2% 10%
+    }
+    /*第二屏的响应式*/
+    body #dowebok .section2 .Icon {
+        margin: 0;
+        margin-bottom: 4rem;
+    }
+    body #dowebok .section2 .Icon ul {
+        margin: 0 1%;
+    }
+    body #dowebok .section2 h3 {
+        line-height: 30px;
+        margin: 0 10%;
+    }
+    /*第三屏的响应式*/
+    body #dowebok .section3 .SkillsLeft {
+        width: 300px;
+        height: 300px;
+        float: left;
+        margin: 0px 10%;
+        border-radius: 50%;
+        border: 2px dashed #2196F3;
+        animation: spin 18s linear 0s infinite;
+        /*调用动画*/
+    }
+    body #dowebok .section3 .SkillsRight {
+        margin-top: 20px;
+    }
+    body #dowebok .section3 .SkillsRight h3 {
+        font-size: 16px;
+        line-height: 10px;
+    }
+}
+
+
+/*page的通用样式*/
+
+#dowebok .section {
+    text-align: center;
+    font-family: cursive;
+    color: #fff;
+}
+
+
+/*第一屏样式*/
+
+#dowebok .section1 img {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    overflow: hidden;
+    text-align: center;
+}
+
+#dowebok .section1 p {
+    font-size: 80%;
+}
+
+
+/*第二屏样式*/
+
+#dowebok .section2 .Icon {
+    display: flex;
+    margin: 0 25%;
+    margin-bottom: 100px;
+}
+
+#dowebok .section2 .Icon ul {
+    flex: 1;
+    margin: 0 10%;
+}
+
+#dowebok .section2 .Icon i {
+    font-size: 50px;
+    display: block;
+}
+
+#dowebok .section2 h3 {
+    line-height: 50px;
+    margin: 0 10%;
+}
+
+
+/*第三屏样式*/
+
+#dowebok .section3 {
+    margin: 0 auto;
+}
+
+#dowebok .section3 .SkillsLeft {
+    width: 300px;
+    height: 300px;
+    float: left;
+    margin-left: 200px;
+    border-radius: 50%;
+    border: 2px dashed #2196F3;
+    animation: spin 18s linear 0s infinite;
+    /*调用动画*/
+}
+
+@keyframes spin {
+    0% {
+        transform: rotateZ(0deg);
+    }
+    100% {
+        transform: rotateZ(-360deg);
+    }
+}
+
+#dowebok .section3 .SkillsLeftCircle {
+    width: 150px;
+    height: 150px;
+    line-height: 300px;
+    margin: auto;
+    border-radius: 50%;
+    border: 2px dashed #2196F3;
+    margin-top: 75px;
+    animation: zpin 18s linear 0s infinite;
+    /*调用动画*/
+}
+
+@keyframes zpin {
+    0% {
+        transform: rotateZ(-720deg);
+    }
+    100% {
+        transform: rotateZ(-0deg);
+    }
+}
+
+#dowebok .section3 .SkillsLeft a {
+    display: inherit;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    background-color: #2196F3;
+    text-align: center;
+    color: #f0ffff;
+}
+
+#dowebok .section3 .SkillsLeft .SkillsLeftCircle a:nth-child(1) {
+    margin-left: 0px;
+}
+
+#dowebok .section3 .SkillsLeft .SkillsLeftCircle a:nth-child(2) {
+    margin-left: -15px;
+    margin-top: 45px;
+}
+
+#dowebok .section3 .SkillsLeft .SkillsLeftCircle a:nth-child(3) {
+    margin-left: 60px;
+}
+
+#dowebok .section3 .SkillsLeft .SkillsLeftCircle a:nth-child(4) {
+    margin-left: 85px;
+    margin-top: -175px;
+}
+
+#dowebok .section3 .SkillsLeft .SkillsLeftCircle a:nth-child(5) {
+    margin-left: 130px;
+    margin-top: 40px;
+}
+
+#dowebok .section3 .SkillsLeft>a:nth-child(2) {
+    margin-top: -245px;
+    margin-left: 125px;
+}
+
+#dowebok .section3 .SkillsLeft>a:nth-child(3) {
+    margin-top: 40px;
+}
+
+#dowebok .section3 .SkillsLeft>a:nth-child(4) {
+    margin-top: 115px;
+    margin-left: 5px;
+}
+
+#dowebok .section3 .SkillsLeft>a:nth-child(5) {
+    margin: 30px auto 0 auto;
+    ;
+}
+
+#dowebok .section3 .SkillsLeft>a:nth-child(6) {
+    margin-top: -259px;
+    margin-left: auto;
+}
+
+#dowebok .section3 .SkillsLeft>a:nth-child(7) {
+    margin-top: 107px;
+    margin-left: auto;
+}
+
+
+/*第四屏样式*/
+
+#dowebok .section4 .section4_content {
+    width: 79%;
+    height: 50%;
+    margin: 0 auto;
+}
+
+#dowebok .section4 .section4_content_left {
+    width: 65%;
+    height: 100%;
+    float: left;
+}
+
+#dowebok .section4 .section4_content_left img {
+    width: 70%;
+    height: 65%;
+    position: relative;
+    float: left;
+	border-radius: 5%;
+	box-shadow: 1px
+}
+#dowebok .section4 .section4_content_left img:hover{
+    z-index:999;
+    animation: imghover 1s linear 0s 1;
+}
+@keyframes imghover {
+    0% {
+    	opacity:0.8;
+    }
+    100% {
+    	opacity:1;
+    }
+}
+#dowebok .section4 .section4_content_right {
+    width: 35%;
+    height: 100%;
+    float: left;
+}
+
+#dowebok .section4 .section4_content_right>h4 {
+    text-align: left;
+    margin: 0;
+}
